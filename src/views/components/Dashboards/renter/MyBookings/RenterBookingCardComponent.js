@@ -86,9 +86,7 @@ const RenterBookingCardComponent = (props) => {
             {/* trip start */}
             <div className="trip-details-item d-flex justify-content-between d-md-block me-md-4">
               <small>Delivery Location</small>
-              <p className="fw-500 mx-3">
-                {pickupAddress.address ? pickupAddress.address : ""}
-              </p>
+              <p className="fw-500 mx-3">Uttara</p>
             </div>
             <hr className="my-2 d-md-none" />
           </div>
