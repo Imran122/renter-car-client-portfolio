@@ -1,0 +1,112 @@
+.manage-hr img {
+    width: 50px;
+    height: 50px;
+    margin-top: 45%;
+}
+
+.manage-hr h3 {
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1D2F47;
+}
+
+.manage-hr p {
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C7584;
+}
+
+.btn-suspend {
+    font-family: var(--fontFamily);
+    padding: 15px 20px;
+    border: 1.2px solid #EAECF0;
+    background-color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #475467;
+    position: relative;
+    top: 15px;
+    left: 0;
+    float: right;
+    width: 100%;
+}
+
+.btn-suspend:hover{
+    background-color: #EAECF0;
+}
+
+button.btn-delete {
+    border: unset !important;
+    background: unset !important;
+}
+
+.btn-delete svg {
+    position: relative;
+    top: 15px;
+    background-color: #fff;
+    color: var(--primaryColorHover);
+    width: 50px;
+    height: 50px;
+    border: 1.2px solid var(--primaryColorHover);
+    padding: 10px;
+}
+
+.btn-delete svg:hover{
+    color: #fff;
+    background-color: var(--primaryColorHover);
+}
+
+.user-lists-rating {
+    color: #f0a500 !important;
+    background: rgba(240, 165, 0, 0.1);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.cr-bank-details{
+    margin-top: 10%;
+}
+
+.cr-bank-details h2 {
+    font-family: var(--fontFamily);
+    font-size: 14px;
+    color: var(--black1);
+}
+
+@media screen and (max-width: 768px){
+    .btn-suspend {
+        padding: 10px;
+        font-size: 12px;
+        top: 10px;
+        width: 100%;
+    }
+
+    .btn-delete svg {
+        top: 10px;
+        width: 45px;
+        height: 45px;
+        padding: 8px;
+    }
+
+    .manage-hr img {
+        margin-top: 35%;
+    }
+
+    .manage-hr h3 {
+        font-size: 18px;
+    }
+
+    .cr-bank-details{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}

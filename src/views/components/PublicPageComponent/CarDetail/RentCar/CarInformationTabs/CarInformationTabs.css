@@ -1,0 +1,194 @@
+.rent-car-information-tabs {
+    position: relative;
+    padding: 30px;
+}
+
+.rent-car-information-tabs li button {
+  padding-left: 0;
+}
+
+.review-stats-left > p {
+    font-weight: 600;
+    color: #1D2635;
+}
+
+.review-stats-left > small {
+    font-weight: 500;
+    color: var(--black4);
+}
+
+.review-stats-right small {
+    color: #344054;
+}
+
+.review-list {
+    margin-top: 60px;
+}
+
+.review-stats-star-count-bar {
+    width: 300px;
+    height: 12px;
+    background: #F2F4F7;
+    position: relative;
+}
+
+.review-stat-star-count-percent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #FFAD60;
+}
+
+/* delivery card */
+.delivery-card {
+    border: 1px solid #EAECF0;
+    padding: 20px;
+    position:relative;
+}
+.delivery-card-address {
+    color: var(--black4);
+}
+.delivery-card-price {
+    font-weight: 600;
+    color: var(--black1);
+}
+
+.delivery-card-badge {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    width: 60px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    transform: translate(50%, -50%);
+    outline: 8px solid white;
+    background: #3B9641;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cc-add-review-btn {
+    width: 100%;
+    height: 48px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--primaryColor);
+    text-decoration: none;
+}
+
+.cc-add-review-btn[disabled]:hover {
+    cursor: not-allowed;
+    background: var(--primaryColor);
+    pointer-events: all !important;
+}
+
+.cc-add-review-btn:hover{
+    color: #fff;
+    background-color: var(--primaryColorHover);
+}
+
+
+
+.car-details-tabss li button {
+    padding-left: 0;
+    font-size: 20px;
+  }
+  
+  .car-details-tabss .nav-item.show .nav-link,
+  .car-details-tabss .nav-link.active {
+    color: #524eb7 !important;
+    background-color: #fff !important;
+    border-color: #dee2e6 !important;
+    border-left: unset !important;
+    border-top: unset !important;
+    border-right: unset !important;
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  
+  .car-details-tabss .nav-item.show .nav-link,
+  .car-details-tabss .nav-link.active::before {
+    content: "";
+    background: #524eb7;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 73px;
+  }
+  
+  .car-details-tabss .nav-link {
+    margin-bottom: -1px;
+    font-family: var(--fontFamily);
+    border-color: #dee2e6 !important;
+    border-left: unset !important;
+    border-top: unset !important;
+    border-right: unset !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #98a2b3 !important;
+  }
+  
+  .car-details-tabss .nav-link:focus,
+  .car-details-tabss .nav-link:hover {
+    border-color: #dee2e6 !important;
+    border: unset !important;
+    margin-bottom: unset !important;
+    outline: unset !important;
+  }
+  
+.delivery-card-list-container {
+    width: 50%;
+}
+
+.review-stats-left {
+    width: 30%;
+}
+
+.review-stats-right {
+	margin-left: 5%;
+    display: block;
+    width: 100%;
+}
+  
+@media only screen and (max-width: 768px){
+
+    .car-details-tabss .nav-link {
+        font-size: 12px;
+    }
+
+    .car-details-tabss .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        font-size: 12px;
+    }
+
+    .rent-car-information-tabs {
+        padding: 15px !important;
+    }
+
+    .car-details-tabss .nav-item.show .nav-link, .car-details-tabss .nav-link.active::before {
+        top: 59px;
+    }
+
+    .delivery-card-list-container {
+        width: 100%;
+    }
+
+    .review-stats-right {
+        margin-left: 0; 
+    }
+
+    .cc-add-review-btn {
+        width: 100%;
+        height: 42px;
+        padding: 0 !important;
+    }
+
+}

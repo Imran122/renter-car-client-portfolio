@@ -1,0 +1,16 @@
+.all-bookings-card {
+    width: 100%;
+    border: 1.5px solid #EAECF0;
+    margin-top: 18px;
+}
+
+.trp-b-img > p {
+    font-style: italic;
+}
+
+.trp-b-img img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 3px;
+}

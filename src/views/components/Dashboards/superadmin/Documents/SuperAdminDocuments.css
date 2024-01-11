@@ -1,0 +1,74 @@
+.car-approval-request h5 {
+  font-weight: 700;
+  color: var(--black1);
+}
+
+.car-approval-request p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475467;
+}
+
+.a-border {
+  border: 1.5px solid #eaecf0;
+}
+
+.car-a-id {
+  color: var(--primaryColor);
+}
+
+.approval-posts {
+  margin-bottom: 2%;
+}
+
+.car-request-thumb {
+  width: 134px;
+  height: 132px;
+  border: 1.2px solid #eaecf0;
+}
+
+.car-approval-id {
+  color: var(--primaryColor) !important;
+}
+
+.c-app-border {
+  border: unset;
+}
+
+
+.apr_about {
+  display: inline-block;
+}
+
+.apr_about svg {
+  color: #475467;
+}
+.apr_about p {
+  display: inline-block;
+  padding-left: 5px;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #475467;
+}
+
+.apr_about p strong {
+  color: #101828;
+}
+
+.cc-av-title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101828;
+}
+
+.car-apr-photos {
+  background: #f1f1f9;
+  padding: 10px;
+}

@@ -1,0 +1,144 @@
+.admin-add-content {
+    background: #FFFFFF;
+    border: 1.5px solid #EAECF0;
+    padding: 25px;
+}
+
+.admin-add-content label.form-label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #475467;
+    font-family: var(--fontFamily);
+}
+
+.admin-add-content input {
+    height: 60px;
+    border: 1px solid #EAECF0;
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #667085;
+}
+
+.admin-add-content input::placeholder {
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #667085;
+}
+
+.admin-add-content p{
+    font-family: var(--fontFamilyMonrope);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    color: #667085;
+}
+
+.btnadmin {
+    font-family: var(--fontFamily);
+    position: relative;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    border-radius: 4px;
+}
+
+.btnadmin:hover{
+    background: var(--primaryColorHover);
+    border: 1px solid var(--primaryColorHover);
+}
+
+.admin-tbl h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1D2F47;
+    font-family: var(--fontFamily);
+}
+
+.admin-lists img {
+    width: 72px;
+    height: 72px;
+}
+
+.admin-lists h3{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1D2F47;
+}
+
+.admin-lists p{
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C7584;
+}
+
+.btn-remove {
+    font-family: var(--fontFamily);
+    padding: 15px 40px;
+    border: 1.2px solid #EAECF0;
+    background-color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #475467;
+}
+
+.btn-remove:hover{
+    background-color: #EAECF0;
+}
+
+@media screen and (max-width: 768px) {
+    .admin-add-content input {
+        height: 45px;
+    }
+    .btnadmin {
+        top: 15%;
+        height: 45px;
+    }
+
+    .admin-lists img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .admin-lists h3 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+
+    .admin-lists p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .btn-remove {
+        padding: 5px 15px;
+    }
+}

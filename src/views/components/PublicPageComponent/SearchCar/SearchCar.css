@@ -1,0 +1,193 @@
+.car-search{
+    overflow-x: hidden;
+}
+.car-search-map{
+    width: 100%;
+    height: 650px;
+}
+
+button.more-filters {
+    background: unset;
+    border: unset;
+    padding: 0;
+    text-align: unset;
+    font-weight: unset;
+    outline: unset !important;
+    width: 100%;
+    position: relative;
+    top: 35px;
+}
+
+button.more-filters:focus{
+    background: unset;
+    border: unset;
+    outline: unset !important;
+    box-shadow: unset !important;
+}
+
+button.more-filters:hover,button.more-filters:active{
+    background: unset;
+    border: unset;
+    outline: unset;
+    box-shadow: unset !important;
+}
+
+.more-filters svg{
+    color: #344054;
+}
+
+.more-filters span{
+    margin-left: 10%;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: underline;
+    color: #344054;
+}
+
+.cr-search-car-card {
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    transition: 1s;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 47% !important;
+}
+
+.cr-search-car-card:nth-child(2n) {
+    margin-right: 0;
+}
+
+.cr-search-car-card:hover {
+    box-shadow: 0 0 20px rgb(0 0 0 / 40%);
+}
+
+.modal-btn{
+    width: 100%;
+    height: 60px;
+    border: none !important;
+    color: white !important;
+    font-weight: 600 !important;
+    background-color: var(--primaryColor) !important;
+}
+
+
+.modal-btn:hover{
+    background-color: #f76631 !important;
+}
+
+
+
+div.radio-with-Icon {
+    display: block;
+  }
+div.radio-with-Icon p.radioOption-Item {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: -15px 15px 25px 0;
+    border: none;
+}
+div.radio-with-Icon p.radioOption-Item label {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #EAECF0;
+    cursor: pointer;
+    transition: none;
+    text-align: center;
+    padding: 10px;
+}
+div.radio-with-Icon p.radioOption-Item label:hover, div.radio-with-Icon p.radioOption-Item label:focus, div.radio-with-Icon p.radioOption-Item label:active {
+    border: 1.5px solid #524EB7;
+    box-shadow: 0px 1px 20px rgba(82, 78, 183, 0.12);
+}
+/* div.radio-with-Icon p.radioOption-Item label::after, div.radio-with-Icon p.radioOption-Item label:after, div.radio-with-Icon p.radioOption-Item label::before, div.radio-with-Icon p.radioOption-Item label:before {
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+} */
+div.radio-with-Icon p.radioOption-Item input[type="radio"] {
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+div.radio-with-Icon p.radioOption-Item input[type="radio"]:active ~ label {
+    opacity: 1;
+}
+div.radio-with-Icon p.radioOption-Item input[type="radio"]:checked ~ label {
+    opacity: 1;
+    border: 1.5px solid #524EB7;
+    box-shadow: 0px 1px 20px rgba(82, 78, 183, 0.12);
+    position: relative;
+}
+div.radio-with-Icon p.radioOption-Item input[type="radio"]:hover, div.radio-with-Icon p.radioOption-Item input[type="radio"]:focus, div.radio-with-Icon p.radioOption-Item input[type="radio"]:active {
+    margin: 0 !important;
+}
+div.radio-with-Icon p.radioOption-Item input[type="radio"] + label:before, div.radio-with-Icon p.radioOption-Item input[type="radio"] + label:after {
+    margin: 0 !important;
+}
+
+div.radio-with-Icon p.radioOption-Item input[type="radio"]:checked ~ label::after {
+    content: "";
+    background: url("../../../../assets/icons/radio-after-icon.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    button.more-filters {
+        margin: 5% 0 0 0;
+    }
+
+    .cr-search-car-card {
+        margin-top: 5% !important;
+        width: 100% !important;
+    }
+    
+}
+@media screen and (min-width: 1200px){
+  .car-search{
+    overflow-x: hidden;
+    position: relative;
+    }
+    .car-search-map{
+        width: 100%;
+        /* height: 650px; */
+        height: 80vh;
+    }
+
+    .car-detail-map-container {
+        position: relative;
+    }
+
+    .car-map-wrapper {
+        position: fixed;
+        width: 41.6%;
+    }
+
+    .card-filter-wrapper {
+        margin-top: 116px;
+    }
+
+    .car-filters-container {
+        position: fixed;
+        width: 58.4%;
+        top: 110.24px;
+        z-index: 99;
+        background: white;
+    }
+
+    
+}

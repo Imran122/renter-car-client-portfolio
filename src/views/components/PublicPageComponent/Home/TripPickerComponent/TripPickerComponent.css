@@ -1,0 +1,102 @@
+.trip-picker-container {
+  padding: 20px 24px;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  margin-top: -24px;
+  position: relative;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.trip-picker-input-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--black4);
+  margin-bottom: 10px;
+}
+
+.trip-picker-input-group {
+  border: 1px solid #eaecf0;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  padding: 11px 16px;
+}
+
+.trip-picker-input-append {
+  margin-right: 10px;
+  color: var(--black5);
+}
+
+.trip-picker-input,
+.trip-picker-input::placeholder {
+  color: #667085;
+  box-shadow: none !important;
+}
+
+.trip-picker-remove-icon::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.ccloc-icon {
+  position: relative;
+  top: -37px;
+  left: 3px;
+}
+
+.ttt{
+  position: relative; 
+}
+
+.trip-picker-datetime::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+}
+
+.trip-picker-datetime::-webkit-datetime-edit {
+  position: relative;
+  left: 15px;
+}
+
+.trip-picker-datetime::-webkit-datetime-edit-fields-wrapper {
+  position: relative;
+  left: 20px;
+}
+
+.cc-lan-in {
+  border: 1px solid #eaecf0 !important;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 14px !important;
+  position: static;
+  height: 47.5px;
+  left: 0px;
+  top: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .trip-picker-container {
+    width: 95vw;
+    margin: -50px auto 0 auto;
+    padding: 30px 20px;
+    border-radius: 0;
+    box-shadow: 0px 1px 56px rgba(16, 24, 40, 0.08);
+  }
+
+  .trip-picker-input-button-container > button {
+    padding: 12px 16px !important;
+    position: relative;
+    top: 30px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .trip-picker-container {
+    width: 80vw;
+  }
+
+  .trip-picker-input-button-container > button {
+    padding: 12px 16px !important;
+  }
+}

@@ -1,0 +1,80 @@
+.car-logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sign-in-info-card {
+  width: 530px;
+}
+
+.signup-tab li button {
+  padding-left: 0;
+  font-size: 20px;
+}
+
+.signup-tab .nav-item.show .nav-link,
+.signup-tab .nav-link.active {
+  color: #524eb7 !important;
+  background-color: #fff !important;
+  border-color: #dee2e6 !important;
+  border-left: unset !important;
+  border-top: unset !important;
+  border-right: unset !important;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.signup-tab .nav-item.show .nav-link,
+.signup-tab .nav-link.active::before {
+  content: "";
+  background: #524eb7;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  top: 59px;
+}
+
+.signup-tab .nav-link {
+  margin-bottom: -1px;
+  font-family: var(--fontFamily);
+  border-color: #dee2e6 !important;
+  border-left: unset !important;
+  border-top: unset !important;
+  border-right: unset !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #98a2b3 !important;
+}
+
+.signup-tab .nav-link:focus,
+.signup-tab .nav-link:hover {
+  border-color: #dee2e6 !important;
+  border: unset !important;
+  margin-bottom: unset !important;
+  outline: unset !important;
+}
+
+
+@media only screen and (max-width: 768px){
+
+  .signup-tab .nav-link {
+    font-size: 14px;
+  }
+
+  .signup-tab .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    font-size: 14px;
+  }
+
+}
+.homr-btn-mains{
+  background-color: #524eb7;
+}
+.home-btn-text{
+  color:white !important;
+  text-decoration: none !important;
+}

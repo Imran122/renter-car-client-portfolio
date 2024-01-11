@@ -1,0 +1,62 @@
+
+.car-book-request-user h5 {
+  font-weight: 700;
+  color: var(--black1);
+  margin-bottom: 0;
+}
+
+p.car-book-request-status {
+  position: relative;
+  top: -10px;
+}
+
+.car-book-request-user p > span {
+  color: var(--black4);
+}
+
+.cr-btn-success{
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.cr-btn-success:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+
+@media only screen and (max-width: 768px){
+  .cr-btns{
+      width: 45%;
+  }
+}
+
+
+
+
+.loader {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 10px solid orange;
+  border-top-color: #002147;
+  box-sizing: border-box;
+  background: transparent;
+  animation: loading 1s linear infinite;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 0;
+  text-align: center;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}

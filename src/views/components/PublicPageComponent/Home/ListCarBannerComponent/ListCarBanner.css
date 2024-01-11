@@ -1,0 +1,121 @@
+.list-car-container {
+  background: url(../../../../../assets/images/listyourcarbg.png);
+  background-size: contain;
+  background-position: right;
+}
+
+.list-car-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(
+    to right,
+    rgba(82, 78, 183, 1),
+    rgba(82, 78, 183, 1),
+    rgba(82, 78, 183, 0.9)
+  );
+}
+
+.list-car-left-col {
+  padding: 20px 10px;
+}
+
+.list-car-left-col h3 {
+  font-size: 24px;
+}
+
+.list-car-left-col p {
+  display: none;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 30px 0 34px 0;
+}
+
+.list-car-left-col-buttons button {
+  width: 102px;
+  height: 32px;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+  border: 1.5px solid #ffffff;
+}
+
+.list-car-left-col-buttons button:first-of-type {
+  background: var(--primaryColorHover);
+}
+
+.list-car-left-col-buttons button:last-of-type {
+  background: transparent;
+}
+
+.list-car-right-col {
+  position: relative;
+}
+
+.list-car-right-col img {
+  width: 138px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  object-fit: contain;
+}
+
+/* tab screen */
+@media screen and (min-width: 1092px) {
+  .list-car-primary-container {
+    margin-top: 100px;
+  }
+
+  .list-car-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .list-car-left-col {
+    padding: 50px;
+  }
+
+  .list-car-left-col h3 {
+    font-size: 34px;
+  }
+
+  .list-car-left-col p {
+    display: block;
+    margin: 30px 0 34px 0;
+  }
+
+  .list-car-left-col-buttons button {
+    font-size: 16px;
+    width: 151px;
+    height: 60px;
+  }
+
+  .list-car-right-col {
+    position: relative;
+  }
+
+  .list-car-right-col img {
+    width: 100%;
+    height: 425px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    object-fit: contain;
+  }
+}
+
+/* desktop screen */
+
+@media screen and (min-width: 1400) {
+  .list-car-left-col h3 {
+    font-size: 48px;
+  }
+}
+.worklink{
+  color: #ffffff;
+  text-decoration: none;
+}
+.worklink:hover{
+  color: #ffffff;
+  text-decoration: none;
+}

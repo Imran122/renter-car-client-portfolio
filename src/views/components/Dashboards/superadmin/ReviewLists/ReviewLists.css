@@ -1,0 +1,67 @@
+.cc-reviwlist-btn {
+    width: 85%;
+    height: 48px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--primaryColor);
+}
+
+.cc-reviwlist-modal-btn{
+    width: 30%;
+    height: 48px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--primaryColor);
+}
+
+.cc-reviwlist-btn:hover, .cc-reviwlist-modal-btn:hover {
+    color: #fff;
+    background-color: var(--primaryColorHover);
+}
+
+.review-details-item2 {
+    margin-left: 10%;
+    margin-top: 4%;
+    padding: 10px;
+    background: #F2F4F7;
+    border: 1.2px solid #EAECF0;
+}
+
+.review-details-item2 p {
+    font-size: 14px;
+}
+
+.sa-review-user-title h5 {
+    font-family: var(--fontFamily);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101828;
+}
+
+.sa-review-box{
+    margin-bottom: 3%;
+}
+
+.star-rated-button {
+    border: unset;
+    background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .sa-review-user-title h5 {
+        font-size: 15px;
+    }
+
+    .cc-reviwlist-btn {
+        width: 100%;
+    }
+
+    
+    .cc-reviwlist-modal-btn{
+        width: 50%;
+    }
+}

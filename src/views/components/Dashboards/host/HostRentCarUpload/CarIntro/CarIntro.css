@@ -1,0 +1,12 @@
+.cr-alert {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    position: relative;
+    padding: 0.2rem 0.2rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 12px;
+    font-weight: 550;
+}

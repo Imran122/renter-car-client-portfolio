@@ -1,0 +1,185 @@
+.car-img-on-focus {
+	padding: 41px 0 51px 0;
+	text-align: center;
+}
+
+.car-img-wrapper {
+	background: #f5f4fb;
+	text-align: center;
+}
+
+.car-img-list-container {
+	padding: 20px 24px;
+}
+
+.car-detail-container {
+	background: white;
+	padding: 20px 24px;
+	border-radius: 20px 20px 0px 0px;
+	margin-top: -10 px;
+}
+
+.most-booked-cars-rating {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	font-size: 12px;
+}
+
+.car-title-specs-container > h3 {
+	color: var(--black1);
+	margin: 10px 0 16px 0;
+}
+
+.car-specs-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.car-spec {
+	margin: 0;
+}
+
+.car-spec:not(:first-child) {
+	margin: 0;
+	padding-left: 8px;
+}
+
+.car-spec:not(:last-child) {
+	border-right: 1px solid var(--black8);
+	padding-right: 8px;
+}
+
+.car-spec span:first-child {
+	font-size: 14px;
+	color: var(--black4);
+}
+
+.car-spec span:last-child {
+	font-size: 14px;
+	color: var(--black1);
+	font-weight: 600;
+}
+
+/* host details */
+.car-host-details-container {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid var(--black8);
+	border-bottom: 1px solid var(--black8);
+}
+
+.host-details p:first-of-type {
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--black4);
+}
+
+.host-details-rating {
+	background: rgba(82, 78, 183, 0.1);
+	color: var(--primaryColor);
+}
+
+.car-host-details-container button {
+	background: transparent;
+	padding: 8px;
+	border: 1px solid var(--black8) !important;
+	color: var(--black5);
+}
+
+/* trip book */
+.trip-book-container {
+	/* add style here */
+}
+
+.trip-cost-container {
+	padding: 10px 24px 10px 24px;
+}
+
+.trip-cost-container-wrapper {
+	padding: 20px;
+	background: rgba(82, 78, 183, 0.02);
+}
+
+.trip-book-container p {
+	margin: 0;
+}
+
+.trip-cost {
+	border-bottom: 1px solid var(--black8);
+	margin-bottom: 20px;
+	padding-bottom: 30px;
+}
+
+.trip-cost-item:first-child {
+	margin-bottom: 20px;
+}
+
+.trip-cost-item p {
+	color: var(--black4);
+}
+
+.trip-cost-item p:last-of-type {
+	font-weight: 600;
+	color: var(--black1);
+}
+
+.trip-cost-total-value {
+	font-size: 20px;
+}
+
+/* trip booking start ends */
+
+.trip-book-time-container {
+	padding: 20px 24px;
+	background: white;
+	box-shadow: 0px -4px 30px rgba(0, 0, 0, 0.06);
+	border-radius: 20px 20px 0px 0px;
+	margin-top: -16px;
+}
+
+.trip-book-alert {
+	background: rgba(59, 150, 65, 0.03);
+	padding: 12px 24px;
+	color: #3b9641;
+	border: 1px solid #3b9641;
+	margin-bottom: 20px;
+}
+
+.trip-book-alert p {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.trip-book-input-container {
+	margin-bottom: 20px;
+}
+
+/* getting rid of bootstrap paddings on mobile screens */
+@media screen and (max-width: 768px) {
+	.renter-car-detail-container {
+		padding: 0 !important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+    /* car detail responsiveness */
+    .car-detail-left-col {
+        border: 1px solid var(--black8);
+    }
+	/* trip book responsiveness */
+	.trip-book-time-container {
+		padding: 0px;
+		background: white;
+		box-shadow: none;
+		border-radius: 0;
+		margin-top: 0;
+	}
+
+	.trip-cost-container {
+		padding: 0;
+		margin-bottom: 30px;
+	}
+}

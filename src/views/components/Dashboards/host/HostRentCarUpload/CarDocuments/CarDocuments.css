@@ -1,0 +1,57 @@
+.cc-docs p {
+  display: inline-block;
+  margin-left: 1.5%;
+  font-weight: bold;
+}
+
+.cc-file-upload {
+  text-align: center;
+  color: #524eb7;
+  overflow: hidden;
+  height: 134px !important;
+  width: 85%;
+  background: rgba(82, 78, 183, 0.04);
+  border: 1px dashed #524eb7;
+  font-size: 34px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.cc-file-upload label {
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.cc-file-upload svg {
+  cursor: pointer;
+}
+
+.cc-file-upload input {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.file-up-txt {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #524eb7;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) {
+  .cc-back-btn {
+    width: 30%;
+  }
+  .cc-continue-btn {
+    width: 60%;
+  }
+}

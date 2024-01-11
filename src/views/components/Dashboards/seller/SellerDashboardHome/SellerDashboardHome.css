@@ -1,0 +1,29 @@
+.not-dashboard-home-right-col {
+  padding: 10px;
+}
+
+.not-dashboard-home-left-col {
+  padding: 10px;
+}
+
+/* for smaller laptop desktop screens */
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+  .not-dashboard-home-right-col {
+    padding: 20px;
+  }
+
+  .not-dashboard-home-left-col {
+    padding: 20px 30px;
+  }
+}
+
+/* for larger laptop desktop screens */
+@media screen and (min-width: 1400px) {
+  .not-dashboard-home-right-col {
+    padding: 30px;
+  }
+
+  .not-dashboard-home-left-col {
+    padding: 40px 60px;
+  }
+}

@@ -1,0 +1,40 @@
+.upcoming-bookings-count-card {
+  background: #deecdf;
+}
+
+.this-month-bookings-count-card {
+  background: #feeed7;
+}
+
+.total-bookings-count-card {
+  background: #e1eefa;
+}
+
+.scheduled-bookings-car-status {
+  background: #deecdf;
+  color: #3b9641;
+}
+
+.scheduled-bookings-money-limit > p {
+  text-decoration: underline;
+  color: var(--primaryColor);
+}
+
+.trip-details-item > small {
+  color: var(--black6);
+}
+
+.trip-details-item > p {
+  color: var(--black1);
+  margin-top: 8%;
+}
+
+.notification-card-detail > p {
+  font-weight: 600;
+  color: var(--black1);
+}
+
+.notification-card-detail > small {
+  font-weight: 500;
+  color: var(--black6);
+}

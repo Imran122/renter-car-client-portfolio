@@ -1,0 +1,172 @@
+.renter-pay-container,.renter-pay-checkout-container {
+    padding: 40px 20px;
+}
+
+.renter-pay-content-container,.renter-pay-checkout-content-container {
+    width: 100%;
+}
+
+.cashpay {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 5px;
+  transition: 1s;
+}
+
+.cashpay:hover{
+  color: #524EB7;
+}
+
+.cr-tbl{
+  text-align: center;
+}
+
+.cr-tbl-bb{
+  border-bottom: 1px solid #EAECF0;
+}
+
+.cr-pay-success h2 {
+  font-family: 'Plus Jakarta Sans';
+  text-align: center;
+  color: #101828;
+  font-size: 34px;
+}
+
+.cr-success-tbl{
+  border: 1px solid #EAECF0;
+  padding: 4px;
+}
+
+.cr-pay-success p{
+  font-family: 'Plus Jakarta Sans';
+  color: #475467;
+  font-size: 16px;
+}
+
+.cr-success-tbl thead tr th{
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #475467;
+}
+
+.cr-success-tbl tbody tr td{
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101828;
+}
+
+.cr-success-fr thead tr th, .cr-success-fr tbody tr td{
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #475467;
+}
+
+.cr-success-fr thead tr th:nth-child(3),.cr-success-fr tbody tr td:nth-child(3){
+  float: right;
+}
+
+.return-home-btn {
+  width: 100%;
+  height: 60px;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  background-color: var(--primaryColor);
+  transition: 1s;
+}
+
+.return-home-btn:hover{
+  color: #fff !important;
+  background-color: var(--primaryColorHover);
+}
+
+.cr-rp-btn-back{
+  width: 100%;
+  height: 60px;
+  color: #524EB7;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #fff;
+  border: 1.3px solid #524EB7;
+  transition: 1s;
+}
+
+.cr-rp-btn-back:hover{
+  color: #fff;
+  background-color: #524EB7;
+}
+
+.cr-rp-btn-continue{
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #524EB7;
+  border: 1.3px solid #524EB7;
+  transition: 1s;
+}
+
+.cr-rp-btn-continue:hover{
+  color: #fff;
+  background-color: var(--primaryColorHover);
+  border: 1.3px solid var(--primaryColorHover);
+}
+
+
+
+/* for smaller laptop desktop screens */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+    .renter-pay-container,.renter-pay-checkout-container {
+      padding: 20px 30px;
+      margin-left: 10%;
+    }
+
+    .renter-pay-content-container {
+      width: 80%;
+    }
+
+    .renter-pay-checkout-content-container{
+      width: 100%;
+    }
+    .return-home-btn {
+      width: 70%;
+    }
+  }
+  
+  /* for larger laptop desktop screens */
+  @media screen and (min-width: 1400px) {
+    .renter-pay-container {
+      padding: 40px 60px;
+      margin-left: 10%;
+    }
+    .renter-pay-checkout-container {
+      padding: 40px 60px;
+      margin-left: 10%;
+    }
+    .renter-pay-content-container {
+      width: 75%;
+    }
+    .renter-pay-checkout-content-container{
+      width: 100%;
+    }
+    .return-home-btn {
+      width: 70%;
+    }
+  }

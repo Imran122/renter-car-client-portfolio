@@ -1,0 +1,126 @@
+.car-bg {
+  background-color: #f5f4fb;
+  height: 100vh;
+}
+
+.car-logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.error-msg {
+  margin-top: 10%;
+}
+
+.form-div {
+  padding: 15px;
+  border: 1.5px solid #eaecf0;
+  border-radius: 0px;
+  margin: 10% 0;
+  position: relative;
+}
+
+.email-password-div {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.email-password-div p {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-family: var(--fontFamily), sans-serif;
+  color: var(--labelColor);
+  font-weight: 600;
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.text-input-field {
+  height: 50px;
+  width: 100%;
+  border: 1px solid var(--inputFieldBorderColor);
+  padding: 0px 10px 0px 35px;
+}
+
+.text-input-field::placeholder {
+  font-family: var(--fontFamily), sans-serif;
+  color: var(--inputFieldPlaceHolderTextColor);
+}
+
+.icon {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  color: var(--inputFieldPlaceHolderTextColor);
+}
+
+.alert-message {
+  font-family: var(--fontFamily), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 10px;
+  color: var(--passwordAlertMessage);
+}
+
+.remember-forget-password-div {
+  margin-top: 30px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--inputFieldBorderColor);
+  border-radius: 50%;
+}
+
+.primary-color {
+  color: var(--primaryColor);
+}
+
+.button {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border: 1px solid var(--inputFieldBorderColor);
+}
+
+.login-button {
+  background-color: var(--primaryColor);
+  border: 0px;
+}
+
+.login-button-text {
+  color: #fff;
+}
+
+.login-google-text {
+  color: var(--logInGoogleFacebookText);
+  margin: 0;
+}
+
+.no-account-text {
+  color: var(--passwordAlertMessage);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.no-account-text a {
+  text-decoration: none;
+}

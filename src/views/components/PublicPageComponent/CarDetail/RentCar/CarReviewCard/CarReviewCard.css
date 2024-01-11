@@ -1,0 +1,19 @@
+.cr-review-accordion {
+    padding: 5px; 
+}
+
+.cr-review-accordion .accordion-button:not(.collapsed) {
+    color: unset !important;
+    background-color: unset !important;
+    box-shadow: unset !important;
+}
+
+.cr-review-accordion .accordion-button {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.rv-p{
+    width: 45px !important;
+    height: 45px !important;
+}

@@ -1,0 +1,13 @@
+.car-book-request-thumb {
+  max-width: 52px !important;
+  height: 52px !important;
+}
+
+.car-book-request-user h5 {
+  font-weight: 700;
+  color: var(--black1);
+}
+
+.car-book-request-user p > span {
+  color: var(--black4);
+}

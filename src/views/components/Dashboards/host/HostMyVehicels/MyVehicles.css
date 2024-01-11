@@ -1,0 +1,155 @@
+.cr-accordion{
+    padding: 20px;
+}
+.cr-accordion .accordion-item {
+    background-color: unset;
+    border: 1.5px solid #eaecf0;
+    margin-bottom: 2.5%;
+}
+
+
+.cr-accordion .accordion-item:not(:first-of-type) {
+    border-top: 1.5px solid #eaecf0 !important;
+}
+
+.cr-accordion .accordion-button:not(.collapsed) {
+    color: unset;
+    background-color: unset;
+    box-shadow: unset;
+}
+
+.cr-accordion .accordion-button:focus {
+    z-index: 3;
+    border-color: unset;
+    outline: 0;
+    box-shadow: unset;
+}
+
+.cr-accordion .accordion-button{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.crp{
+    padding: 0 1.5rem 1.5rem 1.5rem !important;
+}
+
+/*nav tabs*/
+
+.myvehicle-details-tab li button {
+    padding-left: 0;
+    font-size: 20px;
+  }
+  
+  .myvehicle-details-tab .nav-item.show .nav-link,
+  .myvehicle-details-tab .nav-link.active {
+    color: #524eb7 !important;
+    background-color: #fff !important;
+    border-color: #dee2e6 !important;
+    border-left: unset !important;
+    border-top: unset !important;
+    border-right: unset !important;
+    font-family: var(--fontFamily);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+  
+  }
+  
+  .myvehicle-details-tab .nav-item.show .nav-link,
+  .myvehicle-details-tab .nav-link.active::before {
+    content: "";
+    position: absolute;
+    /* top: 425px;
+    background: #524eb7; */
+    top: unset;
+    background: unset;
+    width: 30px;
+    height: 3px;
+  }
+  
+  .myvehicle-details-tab .nav-link {
+    margin-bottom: -1px;
+    font-family: var(--fontFamily);
+    border-color: #dee2e6 !important;
+    border-left: unset !important;
+    border-top: unset !important;
+    border-right: unset !important;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #98a2b3 !important;
+  }
+  
+  .myvehicle-details-tab .nav-link:focus,
+  .myvehicle-details-tab .nav-link:hover {
+    border-color: #dee2e6 !important;
+    border: unset !important;
+    margin-bottom: unset !important;
+    outline: unset !important;
+  }
+  
+  /*nav tabs*/
+
+.vehicles-button a {
+    text-decoration: none;
+    padding: 15px 10px;
+    font-family: var(--fontFamily);
+    color: #98a2b3;
+    font-weight: 600;
+}
+
+.vehicles-button h2{
+  font-family: var(--fontFamily);
+  font-size: 26px;
+  margin-top: 5%;
+}
+
+.vehicles-button a.active{
+  color: #524eb7;
+  background-color: #fff;
+  border-color: #dee2e6;
+  border-left: unset !important;
+  border-top: unset !important;
+  border-right: unset !important;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+
+.vehicles-button a:hover{
+  color: #524eb7;
+}
+
+.vehicles-button{
+  position: relative;
+}
+
+.vehicles-button a.active::before {
+  content: "";
+  background: #524eb7;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  top: 35px;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .cr-accordion{
+        padding: 0;
+    }
+
+    .myvehicle-details-tab .nav-link {
+        font-size: 12px;
+    }
+
+    .myvehicle-details-tab .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        font-size: 12px;
+    }
+  }

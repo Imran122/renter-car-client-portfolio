@@ -1,0 +1,55 @@
+.car-book-status {
+    background: #EAECF0;
+    color: #524EB7;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.book-money-title h3 {
+    display: inline-block;
+    margin-right: 16px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    color: #101828;
+}
+
+.book-money-btn {
+    border: 1px solid #D0D5DD;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+}
+
+.book-money-btn svg {
+    color: #98A2B3;
+}
+
+.cr-booking-card{
+    margin-bottom: 5%;
+}
+
+.book-car-image{
+    height: 51px !important;
+}
+
+.book-car-image img{
+    width: 98px !important;
+    height: 51px !important;
+    padding: 5px;
+}
+
+/* rating */
+.rating-radio-btn{
+    display: none;
+}
+.start-rating{
+    cursor: pointer;
+    transition: color 200ms;
+}

@@ -1,0 +1,42 @@
+.earning-stat-card {
+	padding: 8px;
+}
+
+.earning-stat-card-icon-rise {
+	background-color: #ecf7ef;
+	color: var(--green);
+	width: 24px;
+	height: 24px;
+}
+.earning-stat-card-icon-fall {
+	background-color: #feedeb;
+	color: var(--red);
+	width: 24px;
+	height: 24px;
+}
+
+/* for smaller laptop desktop screens */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+	.earning-stat-card {
+		padding: 16px;
+	}
+
+	.earning-stat-card-icon-rise,
+	.earning-stat-card-icon-fall {
+		width: 28px;
+		height: 28px;
+	}
+}
+
+/* for larger laptop desktop screens */
+@media screen and (min-width: 1400px) {
+	.earning-stat-card {
+		padding: 20px;
+	}
+
+	.earning-stat-card-icon-rise,
+	.earning-stat-card-icon-fall {
+		width: 38px;
+		height: 38px;
+	}
+}

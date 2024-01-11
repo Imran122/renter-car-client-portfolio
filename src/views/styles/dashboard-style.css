@@ -1,0 +1,53 @@
+.button-style {
+  padding: 8px 16px;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+.primary-button {
+  background: var(--primaryColor);
+}
+
+.danger-button {
+  background: var(--red);
+}
+
+.info-button {
+  background: #17a2b8;
+}
+
+.dashboard-header-content-container {
+  font-family: var(--fontFamily);
+  width: 100%;
+}
+
+.cr-border{
+  border: 1.5px solid #EAECF0;
+}
+
+.cr-shadow {
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+.form-check-input:checked {
+  background-color: var(--primaryColor) !important;
+  border-color: var(--primaryColor) !important;
+}
+
+/* for smaller laptop desktop screens */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .dashboard-header-content-container {
+    margin-left: 200px;
+  }
+}
+
+/* for larger laptop desktop screens */
+@media screen and (min-width: 1400px) {
+  .dashboard-header-content-container {
+    margin-left: 290px;
+  }
+
+  .button-style {
+    padding: 11px 40px;
+  }
+}

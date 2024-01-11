@@ -1,0 +1,8 @@
+.services-card {
+  height: 100%;
+}
+
+.services-card > p {
+  font-weight: 500;
+  color: var(--black2);
+}

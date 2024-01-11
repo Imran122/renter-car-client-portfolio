@@ -1,0 +1,11 @@
+
+.car-book-request-user h5 {
+  font-weight: 700;
+  color: var(--black1);
+  font-family: var(--fontFamily);
+}
+
+.car-book-request-user p > span {
+  color: var(--black4);
+  font-family: var(--fontFamily);
+}

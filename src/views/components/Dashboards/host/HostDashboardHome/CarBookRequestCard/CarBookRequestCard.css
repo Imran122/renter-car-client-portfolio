@@ -1,0 +1,9 @@
+
+.car-book-request-user h5 {
+  font-weight: 700;
+  color: var(--black1);
+}
+
+.car-book-request-user p > span {
+  color: var(--black4);
+}

@@ -1,0 +1,84 @@
+.navbar-parent-container {
+  background: white !important;
+  z-index: 999 !important;
+  position: sticky;
+  top: 0;
+}
+.navbar-container {
+  background: var(--black10) !important;
+  margin: 0 auto;
+}
+
+.desktop-nav-links a {
+  text-decoration: none;
+  color: var(--black4);
+  position: relative;
+  margin-right: 14px;
+  transition: all 0.3s ease-out 0s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.desktop-nav-links a:hover {
+  color: var(--primaryColor);
+}
+
+.desktop-nav-links a:hover::before,
+.desktop-nav-links a::before {
+  opacity: 1;
+  width: 100%;
+
+  left: 0;
+  right: auto;
+  transition: all 0.2s linear;
+}
+
+.desktop-nav-links a::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #524eb7;
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: -4px;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.navbar-list-btn {
+  border: 1px solid #d0d5dd;
+  color: var(--black4) !important;
+  padding: 11px 20px;
+  background: transparent;
+}
+
+.mobile-navbar-list-btn-primary {
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  background: var(--primaryColor);
+}
+
+.mobile-navbar-list-btn-secondary {
+  border: 1px solid #eaecf0;
+  color: var(--black4);
+  padding: 6px 10px;
+  background: white;
+}
+
+.onlyMobileNav {
+	left: -70% !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-container {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .navbar-container {
+    width: 80vw;
+  }
+}

@@ -1,0 +1,8 @@
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h3 {
+  color: var(--black3);
+  font-weight: 700;
+}

@@ -1,0 +1,23 @@
+.sidebar-link {
+  text-decoration: none;
+  color: var(--black5);
+  padding: 16px 36px;
+  border-left: 4px solid white;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.sidebar-link:hover,
+.sidebar-link-active {
+  color: var(--primaryColor);
+  background: var(--lightColor);
+  border-left-color: var(--primaryColor);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1399px) {
+  .sidebar-link {
+    font-size: 10px;
+    padding: 14px 36px;
+  }
+}

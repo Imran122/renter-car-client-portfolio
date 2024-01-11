@@ -1,0 +1,33 @@
+.sidebar-container {
+	width: 290px;
+	padding: 40px 0;
+	font-family: var(--fontFamily);
+	height: calc(100vh - 120px);
+}
+
+.main-logo-container {
+	width: 290px;
+	height: 120px;
+	background: #f9fafb;
+}
+
+.main-logo-container img {
+	width: 200px;
+}
+
+/* for smaller laptop desktop screens */
+@media screen and (min-width:768px) and (max-width: 1400px) {
+	.sidebar-container {
+		width: 200px;
+		padding: 10px 0;
+	}
+
+	.main-logo-container {
+		width: 200px;
+		height: 120px;
+	}
+
+	.main-logo-container img {
+		width: 150px;
+	}
+}

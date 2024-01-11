@@ -1,0 +1,145 @@
+.cr-multi-range * {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+.cr-multi-range {
+	display: flex;
+	position: relative;
+	border-radius: 10px;
+	padding: 20px 10px;
+	flex-direction: column;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge,*/
+}
+.cr-multi-range .bar {
+	display: flex;
+}
+.cr-multi-range .bar * {
+	transition: all 100ms;
+}
+.cr-multi-range .bar.active * {
+	transition: none;
+}
+.cr-multi-range .bar-left {
+	width: 25%;
+    background-color: #EAECF0;
+    border-radius: 4px;
+    height: 8px;
+}
+.cr-multi-range .bar-right {
+	width: 25%;
+	background-color: #EAECF0;
+	border-radius: 4px;
+}
+.cr-multi-range .bar-inner {
+    background-color: #524EB7;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+    justify-content: space-between;
+}
+.cr-multi-range .bar-inner-left {
+	width: 50%;
+}
+.cr-multi-range .bar-inner-right {
+	width: 50%;
+}
+.cr-multi-range .thumb {
+	background-color: transparent;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+.cr-multi-range .thumb::before {
+	content: '';
+    background-color: white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #524EB7;
+    box-shadow: 0px 0px 3px #524eb7, inset 0px 0px 5px #cbc9c9;
+    border-radius: 50%;
+    z-index: 1;
+    margin: -8px;
+    cursor: pointer;
+}
+.cr-multi-range .input-type-range:focus + .thumb::after {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	width: 11px;
+	height: 11px;
+	z-index: 2;
+	border-radius: 50%;
+	border: dotted 1px black;
+	box-shadow: 0px 0px 5px white, inset 0px 0px 10px black;
+}
+
+.cr-multi-range .thumb * {
+	position: absolute;
+    bottom: 25px;
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    font-size: 75%;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    font-family: 'Plus Jakarta Sans';
+    color: #1D2939;
+    box-shadow: 0px 0px 5px #a9a8a8;
+    display: none;
+    font-weight: bold;
+}
+.cr-multi-range .thumb:active * {
+	display: block;
+}
+.input-type-range {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.cr-multi-range .ruler {
+	margin: 10px 0px -5px 0px;
+	display: flex;
+	/* display: none; */
+}
+.cr-multi-range .ruler .ruler-rule {
+	border-left: solid 1px;
+	border-bottom: solid 1px;
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding: 5px 0px;
+}
+
+.cr-multi-range .ruler .ruler-rule:last-child {
+	border-right: solid 1px;
+}
+
+.cr-multi-range .label {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: -20px;
+	/* display: none; */
+}
+.cr-multi-range .label-min {
+	font-size: 80%;
+}
+.cr-multi-range .label-max {
+	font-size: 80%;
+}

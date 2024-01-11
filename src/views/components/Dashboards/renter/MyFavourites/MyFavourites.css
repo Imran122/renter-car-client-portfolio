@@ -1,0 +1,32 @@
+.fav-car-card{
+    width: 100% !important;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    transition: 1s;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.fav-car-card:nth-child(2n){
+    margin-right: 0;
+}
+
+.fav-car-card:hover {
+    box-shadow: 0 0 20px rgb(0 0 0 / 40%);
+}
+
+
+/* for smaller laptop desktop screens */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+    .fav-car-card{
+        width: 48% !important;
+    }
+  }
+  
+  /* for larger laptop desktop screens */
+  @media screen and (min-width: 1400px) {
+    .fav-car-card{
+        width: 48% !important;
+    }
+  }
