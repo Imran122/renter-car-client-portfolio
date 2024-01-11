@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import "./MyBookings.css";
 import AddReview from "./AddReview";
+import "./MyBookings.css";
 
 const RenterBookingCardComponent = (props) => {
   const {
@@ -47,11 +47,7 @@ const RenterBookingCardComponent = (props) => {
           {/* car details */}
           <div className="d-flex">
             <div className="cr-border me-2 book-car-image">
-              <img
-                className="img-fluid"
-                src={carImage}
-                alt="car thumbs"
-              />
+              <img className="img-fluid" src={carImage} alt="car thumbs" />
             </div>
             {/* car thumb and model */}
             <div className="flex-grow-1 d-md-flex justify-content-between">
@@ -90,7 +86,9 @@ const RenterBookingCardComponent = (props) => {
             {/* trip start */}
             <div className="trip-details-item d-flex justify-content-between d-md-block me-md-4">
               <small>Delivery Location</small>
-              <p className="fw-500 mx-3">{pickupAddress.address}</p>
+              <p className="fw-500 mx-3">
+                {pickupAddress.address ? pickupAddress.address : ""}
+              </p>
             </div>
             <hr className="my-2 d-md-none" />
           </div>
