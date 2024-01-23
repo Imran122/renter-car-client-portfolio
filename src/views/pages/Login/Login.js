@@ -1,10 +1,8 @@
 import axios from "axios";
 import React, { useState } from "react";
 
-import { FcGoogle } from "react-icons/fc";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiLockPasswordLine } from "react-icons/ri";
-import { SiFacebook } from "react-icons/si";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Car from "../../../assets/images/SignInSignUpCar.png";
 import useAuth from "../../../hooks/useAuth";
@@ -12,21 +10,43 @@ import { authenticate, isAuth } from "../../../utilities/helper";
 import "./Login.css";
 
 const Login = ({ props }) => {
-  const [loginData, setLoginData] = useState({});
+  /* const [loginData, setLoginData] = useState({}); */
+  const [loginData, setLoginData] = useState({
+    email: "imransardar122@gmail.com",
+    password: "imran122",
+    role: "super-admin", // Default role
+  });
+
   const { user, setUser, isLoading, setIsLoading, setAuthError, authError } =
     useAuth();
   const location = useLocation();
-  console.log("lo", location);
-  const navigate = useNavigate();
 
+  const navigate = useNavigate();
+  const handleRoleChange = (e) => {
+    const role = e.target.value;
+    // Set default credentials based on the selected role
+    const defaultCredentials = {
+      "super-admin": {
+        email: "imransardar122@gmail.com",
+        password: "imran122",
+      },
+      renter: { email: "itechverser22@gmail.com", password: "imran122" },
+      host: { email: "mdimranhossain0066@gmail.com", password: "imran122" },
+      seller: { email: "shadowvampire11@gmail.com", password: "imran122" },
+    };
+
+    setLoginData({
+      ...loginData,
+      role,
+      ...defaultCredentials[role],
+    });
+  };
+  console.log(loginData);
   //taking input
   const handelOnBlur = (e) => {
     const field = e.target.name;
     const value = e.target.value;
-    const newLoginData = { ...loginData };
-    newLoginData[field] = value;
-
-    setLoginData(newLoginData);
+    setLoginData({ ...loginData, [field]: value });
   };
 
   //login system by form submit
@@ -54,7 +74,7 @@ const Login = ({ props }) => {
       .then((response) => {
         console.log("SIGNIN SUCCESS", response);
         const destination = location?.state?.from || "/";
-        navigate(location?.state?.from || "/", { replace: true });
+        navigate(location?.state?.from || "/dashboard", { replace: true });
         setErrorMessage("");
         authenticate(response.data, () => {
           setUser(isAuth());
@@ -92,6 +112,20 @@ const Login = ({ props }) => {
               )}
               {/* end  auth error message show */}
             </div>
+            <div className="role-selection w-100">
+              <p className="label">Select Role For default Login:</p>
+              <select
+                className="role-selection w-100 p-2"
+                onChange={handleRoleChange}
+                value={loginData.role}
+              >
+                <option value="super-admin">Admin</option>
+
+                <option value="renter">Renter</option>
+                <option value="host">Host</option>
+                <option value="seller">Seller</option>
+              </select>
+            </div>
             <form
               className="d-flex justify-content-center align-items-center form-div"
               onSubmit={handelLoginSubmit}
@@ -104,6 +138,7 @@ const Login = ({ props }) => {
                     className="text-input-field"
                     placeholder="Enter your email"
                     name="email"
+                    value={loginData.email || ""}
                     onBlur={handelOnBlur}
                   />
                   <HiOutlineMail className="icon" size={20} />
@@ -116,6 +151,7 @@ const Login = ({ props }) => {
                     className="text-input-field"
                     placeholder="Enter password"
                     name="password"
+                    value={loginData.password || ""}
                     onBlur={handelOnBlur}
                   />
                   <RiLockPasswordLine className="icon" size={20} />
