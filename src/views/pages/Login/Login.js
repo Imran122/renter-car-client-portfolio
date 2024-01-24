@@ -138,8 +138,8 @@ const Login = ({ props }) => {
                     className="text-input-field"
                     placeholder="Enter your email"
                     name="email"
-                    value={loginData.email || ""}
-                    onBlur={handelOnBlur}
+                    defaultValue={loginData.email}
+                    onChange={handelOnBlur}
                   />
                   <HiOutlineMail className="icon" size={20} />
                 </div>
@@ -151,8 +151,8 @@ const Login = ({ props }) => {
                     className="text-input-field"
                     placeholder="Enter password"
                     name="password"
-                    value={loginData.password || ""}
-                    onBlur={handelOnBlur}
+                    defaultValue={loginData.password}
+                    onChange={handelOnBlur}
                   />
                   <RiLockPasswordLine className="icon" size={20} />
                   {passwordAlert && (
